@@ -2,9 +2,9 @@
 
 ## Issue
 
-* Some one on your project has merged a **_Pull Request_** into the `main` branch.
-* You push your code to your remote branch named `branch_name` and open a **_Pull Request_** to the `main` branch.
-* _GitHub_ informs you your code can not automaticly merge into the `main` branch.
+* Some one on your project has merged a **_Pull Request_** into the `master` branch.
+* You push your code to your remote branch named `branch_name` and open a **_Pull Request_** to the `master` branch.
+* _GitHub_ informs you your code can not automaticly merge into the `master` branch.
 
 ### Step by Step Solution
 
@@ -26,21 +26,21 @@
 
 * `$ git fetch origin`  
 
-1. Merge local copy of `origin/main` into your local branch called `branch_name`.
+1. Merge local copy of `origin/master` into your local branch called `branch_name`.
 
-* `$ git merge origin/main`  
+* `$ git merge origin/master`  
   _git will tell you what files have failed to automaticly merge_
 
 1. Open each file with conflicts in your _text editor_.
 1. Find the conflicting changes.
 
-* Look for  `<<< HEAD`, `====`, and `>>> main`
+* Look for  `<<< HEAD`, `====`, and `>>> master`
 * These are called "merge markers"
 
 1. Merge the changes together, so the code has exactly what you want it to have.
 
-* Delete the lines that say `<<< HEAD`, `====`, and `>>> main`
-* Delete any unneeded lines from `main` or your `branch_name`.
+* Delete the lines that say `<<< HEAD`, `====`, and `>>> master`
+* Delete any unneeded lines from `master` or your `branch_name`.
 
 ```javascript
 
@@ -48,8 +48,8 @@
    this is where the conflicting code from your branch is
  ===========
 
-   this is where the conflicting code from the main branch is
- >>>>>>>>>>> main
+   this is where the conflicting code from the master branch is
+ >>>>>>>>>>> master
 
 ```
 
@@ -62,7 +62,7 @@
 1. Add your changes and commit.
 
 * `$ git add .`
-* `$ git commit -m  "handled merge conflict from main"`
+* `$ git commit -m  "handled merge conflict from master"`
 
 1. Push to your `branch_name` on origin.
 
