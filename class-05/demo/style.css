@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+#parent {
+    background-color: blueviolet;
+    position: relative;
+    height: 200vh;
+}
+
+
+/* relative */
+
+
+/* #child-one {
+    background-color: rgb(255, 81, 0);
+    position: relative;
+    right: 15px;
+    top: 15px;
+} */
+
+
+/* absolute */
+
+
+/* #child-one {
+    background-color: rgb(255, 81, 0);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+} */
+
+
+/* fixed */
+
+#child-one {
+    background-color: rgb(255, 81, 0);
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+}
+
+#child-two {
+    background-color: rgb(0, 255, 34);
+}
+
+#child-three {
+    background-color: rgb(240, 84, 240);
+}
+
+
+/* Fonts */
+
+p {
+    font-family: "Lobster", cursive;
+}
