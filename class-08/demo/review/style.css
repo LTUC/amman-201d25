@@ -1,0 +1,7 @@
+/* here I am targeting all of the tags that I am using to have the same style */
+
+table,
+th,
+td {
+    border: solid 1px black;
+}

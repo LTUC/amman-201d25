@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background-color: #e8e8ff;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+nav {
+    background-color: #848491;
+}
+
+
+/* the parent should be relative */
+
+nav ul {
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+
+/* if its child is absolute */
+
+nav ul li:last-child {
+    position: absolute;
+    right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F2F0F5;
+    font-weight: bold;
+}
+
+
+/* ---------- body ------------- */
+
+#left-column {
+    width: 75%;
+    float: left;
+}
+
+#right-column {
+    float: right;
+    width: 25%;
+}
+
+.card {
+    padding: 20px;
+    background-color: #F2F0F5;
+    margin: 20px 0;
+}
+
+h2,
+h3,
+h5 {
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+p {
+    font-weight: 500;
+    text-align: justify;
+}
+
+
+/* target the images with class="placeholder" */
+
+.placeholder {
+    width: 100%;
+}
+
+footer {
+    clear: both;
+    padding: 20px;
+    background-color: #F2F0F5;
+}
+
+footer p {
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+}
