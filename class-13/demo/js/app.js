@@ -21,6 +21,15 @@ function Coffee(name, size, milk, isHot, drinkType) {
 }
 
 
+
+// prototype
+// need re-instantiation 
+// Coffee.prototype.drinking = function() {
+//     console.log('drinking');
+// }
+
+
+
 // function for setting items
 function settingItems() {
     // saving to local storage
@@ -59,6 +68,7 @@ function handleSubmit(event) {
     const milk = drink.milk.value;
 
     new Coffee(name, size, milk, isHot, dType);
+    // console.log(Coffee.drinking()); need re-instantiation 
 
     // update the previous orders with the new order
     renderOrders();
